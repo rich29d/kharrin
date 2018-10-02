@@ -1,0 +1,48 @@
+.ctrl{
+	background: #00FF7F;
+	border-radius: 50%;
+	width: 35px;
+	height: 35px;
+	position: fixed;
+	display: block;
+	transform: scale(0);
+}
+
+.ctrl.play{ background: url(../img/icon_play.svg) center center no-repeat #FF0000; }
+
+.ctrl.pause{
+	background: url(../img/icon_pause.svg) center center no-repeat #FF0000;
+}
+
+.ctrl.reset{
+	bottom: 10px;
+	right: 75px;
+	background: url(../img/icon_reset.svg) center center no-repeat #FF0000;
+}
+
+.ctrl.pause,
+.ctrl.play,
+.ctrl.continuar{
+	bottom: 10px;
+	right: 30px;
+}
+
+.ctrl.continuar{
+	border-radius: 50px;
+	width: auto;
+	height: auto;
+    padding: 8px 15px; 
+    color: #FFF;
+    background: #FF0000;
+    text-decoration: none;
+    font-family: slim_font, sans-serif;
+}
+
+.status-pause .ctrl.play,
+.status-pause .ctrl.reset,
+.status-play .ctrl.pause,
+.status-continuar .ctrl.continuar{
+	transform: scale(1);
+}
+
+.status-iniciar .ctrl{ bottom: -150px; }

@@ -1,0 +1,39 @@
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes move_giro {
+    from { transform: rotate(0deg); }
+    to {transform: rotate(1080deg);}
+} 
+
+/* Standard syntax */ 
+@keyframes move_giro {
+    from { transform: rotate(0deg); }
+    to {transform: rotate(1080deg);}
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes pisca_linha {
+    0% { background: transparent; }
+    50% { background: #ffb517;  }
+    100% { background: transparent; }
+} 
+
+/* Standard syntax */ 
+@keyframes pisca_linha {
+    0% { background: transparent; }
+    50% { background: #ffb517;  }
+    100% { background: transparent; }
+}
+
+.giro{
+	-webkit-animation: move_giro 3.5s; /* Safari 4.0 - 8.0 */
+    animation: move_giro 3.5s;
+}
+
+.batido{
+	transform:rotate(45deg);
+}
+
+.pisca-linha{
+	-webkit-animation: pisca_linha 1.5s infinite; /* Safari 4.0 - 8.0 */
+    animation: pisca_linha 1.5s infinite;
+}

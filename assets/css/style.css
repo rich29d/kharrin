@@ -1,0 +1,234 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+article{
+
+}
+
+/*----------------------------------sec-logo*/
+#sec-logo,
+#sec-custom,
+#sec-game-over,
+#sec-ranking{
+	background: rgba(0,0,0,0.7);
+	text-align: center;
+}
+
+
+.logo{
+	width: 90%;
+    height: auto;
+    margin-left: 5%;
+    padding-top: 50%;
+    background: url(../img/logo.svg) center center no-repeat;
+    background-size: contain;
+    margin-top: 40%;
+}
+
+.btn-iniciar-custom{
+	background: #ffb517;
+    border-radius: 50px;
+    display: inline-block;
+    color:#FFF;
+    font-family: slim_font, sans-serif;
+    padding: 5px 15px;
+    text-decoration: none;
+}
+
+/*----------------------------------sec-custom*/
+.custom-carro{    
+    width: 50%;
+    margin-left: 25%;
+    margin-top: 15%;
+}
+
+.paleta{
+	width: 50%;
+	margin: 25px 0;
+    margin-left: 25%;    
+    background: #FFF;
+    border-radius: 23px;
+    float: left;
+}
+
+.paleta .cor-custom{
+	border-radius: 50%;
+    width: 20%;
+    padding-top: 20%;
+    margin: 2.5%;
+    float: left;
+}
+
+.paleta .cor-custom.ativa{ box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.3); }
+
+/*----------------------------------sec-carro*/
+
+.carro{
+	position: fixed;
+	bottom: 40px;
+	left: 42.5%;
+	width: 15%;
+}
+
+.status-iniciar .carro{ bottom: -150px; }
+
+.carro svg{
+	width: 200%;
+	margin-left: -40%;
+}
+
+.pista{
+	background: url(../img/pista.jpg) repeat-y center center;
+	background-size: 100% 20%;
+}
+
+.status-iniciar .pista{ filter: blur(5px); }
+
+/*----------------------------------sec-km*/
+
+#sec-km{
+	width: auto;
+    height: auto;
+    left: 30px;
+    color: #FFF;	
+}
+
+.status-iniciar #sec-km{ top: -50%; }
+
+.km{
+	float: right;	
+}
+
+#sec-km .num-km{
+	font-size: 3em;
+}
+#sec-km .num-medida{
+	font-size: 1em;
+    vertical-align: top;
+}
+
+/*----------------------------------sec-objeto*/
+
+.objeto{
+	width: 25%;
+	height: auto;
+	padding-top: 25%;
+	top: -100%;
+	transition: transform .3s ease;
+}
+
+.tipo_1{ background: url(../img/oleo.svg) center center no-repeat; }
+.tipo_2{ background: url(../img/obra.svg) center center no-repeat; }
+.tipo_3{ background: url(../img/adversario.php) center center no-repeat; z-index: 5; }
+
+.coluna_1{ left: 8%; }
+.coluna_2{ left: 37%; }
+.coluna_3{ left: 67%; }
+
+/*----------------------------------sec-vidas*/
+
+.cont-vidas{
+	width: 140px;
+    height: 35px;
+    background: #ffb517;
+    border-radius: 50px;
+    bottom: 10px;
+    left: 30px;
+    overflow: hidden;
+    position: fixed;
+    z-index: 8;
+}
+
+.status-iniciar .cont-vidas{ bottom: -150px; }
+
+.mesa-vidas{
+	width: 140px;
+}
+
+.cont-vidas .vida{
+	background: url(../img/wheel.svg) center center no-repeat;
+	width: 25px;
+	height: 25px;
+	margin: 5px;
+	float: left;
+}
+
+/*----------------------------------sec-custom*/
+#sec-custom{display: none}
+
+/*----------------------------------sec-game-over*/
+
+#sec-game-over{ display: none;  }
+
+.tit-game-over{
+	padding: 50px 0 30px 0;
+    font-size: 50px;
+    color: #ffb517;
+}
+
+.distancia-percorrida,
+.campo_nome{ 
+	padding: 20px 0;
+    color: #FFF;
+    font-family: slim_font, sans-serif;  
+}
+
+.distancia-percorrida{ color: #F00; }
+
+.campo_nome span{
+	font-size: 10px;
+	display: block;
+}
+
+.campo_nome input{
+	text-align: center;
+    outline: none;
+    color: #FFF;
+    font-family: slim_font, sans-serif;
+    font-size: 50px;
+    background: rgba(0, 0, 0, 0.3);
+    border: none;
+    margin: 5px;
+    width: 200px;
+}
+
+
+/*----------------------------------sec-ranking*/
+
+#sec-ranking{
+    display: none;
+}
+
+.tit-ranking{
+    font-size: 30px;
+    color: #ffb517;
+    padding: 15px 0;
+}
+
+.tabela-ranking{ 
+    color: #FFF;
+    font-family: slim_font, sans-serif;
+    overflow: auto;
+    height: 75%;
+}
+
+.linha-ranking{ 
+    display: table;    
+    width: 94%;
+    margin-left: 3%;
+    margin-bottom: 5px;
+}
+
+.linha-ranking div{ 
+    display: table-cell;
+    padding: 10px;
+}
+
+.pos-ranking{ width: 20%; }
+.km-ranking{ text-align: right; }
+.nome-ranking{ text-align: left; }
+.km-ranking,
+.nome-ranking{    
+    background: rgba(0, 0, 0, 0.3);
+}

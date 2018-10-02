@@ -1,0 +1,85 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<title>Kharrin</title>
+
+<link rel="stylesheet" href="assets/css/geral.css" />
+<link rel="stylesheet" href="assets/css/style.css" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+</head>
+
+
+
+<body>
+
+<article class="absolute">
+
+	<section id="sec-km" class="absolute zIndex6">
+    	<div class="cont-km">
+        	<div class="km">            	
+            	<div class="num-km ">0</div>
+                <div class="num-medida ">km</div>              
+            </div>
+        </div>
+    </section>
+
+	<section id="sec-pista" class="absolute zIndex2">
+    	<div class="cont-pista absolute zIndex2">
+        	<div class="pista absolute zIndex2"></div>
+        </div>
+    </section>
+    
+    <section id="sec-objeto" class="absolute zIndex4">
+    	<div class="cont-objeto absolute zIndex2">
+        	<!--<div class="objeto absolute coluna_1 tipo_1"></div>
+            <div class="objeto absolute coluna_2 tipo_2"></div>
+            <div class="objeto absolute coluna_3 tipo_1"></div>-->
+        </div>
+    </section>
+    
+    <section id="sec-carro">
+    	<div class="cont-carro">
+        	<div class="carro animate zIndex12">
+            	
+                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+					 viewBox="0 0 800 800" enable-background="new 0 0 800 800" xml:space="preserve">
+				
+				<path d="M264,309c0,6.627-5.373,12-12,12h-12c-6.627,0-12-5.373-12-12v-44c0-6.627,5.373-12,12-12h12c6.627,0,12,5.373,12,12V309z"
+					/>
+				<path d="M262,513c0,6.627-5.373,12-12,12h-12c-6.627,0-12-5.373-12-12v-44c0-6.627,5.373-12,12-12h12c6.627,0,12,5.373,12,12V513z"
+					/>
+				<path d="M463,513c0,6.627-5.373,12-12,12h-12c-6.627,0-12-5.373-12-12v-44c0-6.627,5.373-12,12-12h12c6.627,0,12,5.373,12,12V513z"
+					/>
+				<path d="M463,309c0,6.627-5.373,12-12,12h-12c-6.627,0-12-5.373-12-12v-44c0-6.627,5.373-12,12-12h12c6.627,0,12,5.373,12,12V309z"
+					/>
+				<path fill="#0f0" d="M444,537v-28v-63.433C421.405,394.216,444,333,444,333v-83.378c-5.245-5.37-11.352-10.19-17.909-14.505
+					c-14.252-43.449-45.805-73.657-82.442-73.657c-36.806,0-68.48,30.486-82.637,74.257c-6.215,4.162-12.007,8.782-17.011,13.905V333
+					c0,0,22.595,61.216,0,112.567V509v28h-65v51h330v-51H444z"/>
+				<path fill="#7DDDFF" d="M414.304,294c-0.428-19.59-31.707-35.405-70.25-35.405c-38.542,0-69.822,15.815-70.25,35.405H273v37h142v-37
+					H414.304z"/>
+				<line fill="none" stroke="#F9F9F9" stroke-width="10" stroke-miterlimit="10" x1="317.054" y1="560.433" x2="317.37" y2="588"/>
+				<line fill="none" stroke="#F9F9F9" stroke-width="10" stroke-miterlimit="10" x1="364.054" y1="560.433" x2="364.37" y2="588"/>
+				</svg>
+
+                
+            </div>
+        </div>
+    </section>
+
+</article>
+<script>
+	var 
+		altWin = $(window).height()/5,
+		frames = altWin/30,
+		frequencia = 10;
+</script>
+<script src="assets/js/pista.js"></script>
+<script src="assets/js/quilometragem.js"></script>
+<script src="assets/js/carro.js"></script>
+<script src="assets/js/objeto.js"></script>
+<script src="assets/js/script.js"></script>
+
+</body>
+</html>
